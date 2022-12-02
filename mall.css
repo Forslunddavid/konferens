@@ -1,5 +1,20 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Amiko', sans-serif;
+	font-kerning: normal;
+}
+
+@font-face {
+	font-family: BourtonInline;
+	src: url(fonts/bourtoninline.ttf);
+}
 header {
-	background-color: hotpink
+	background-color: #585858;
+	position: fixed;
+	top: 0;
+	width: 100%;
 }
 
 .linklogo {
@@ -7,55 +22,92 @@ header {
 }
 
 .linklogosmall {
-	display: block;
+	display: flex;
+	justify-content: center;
 }
 
 .desktopnav {
-	background-color: aqua;
+	background-color: #dbdbdb;
 	display: none;
 	height: 2em;
 }
 aside {
-	background-color: blueviolet;
+	background-color: #6a6a6a;
+	display: none;
 }
 
 main {
-	background-color: chartreuse;
+	background-color: #1a1a1a;
+	/* display: flex;
+	position: relative; */
 	display: grid;
-	grid-template-columns: 20% 60% 20%;
-	height: 10em;
+	grid-template-columns: 100%;
+	height: 40em;
 }
 
 .mobilenav {
-	background-color: darkmagenta;
+	background-color: #dbdbdb;
 	display: flex;
 	justify-content: space-around;
-	/* display: grid;
-	grid-column: 1 / span 3;
-	grid-row: 2; */
+	height: 2em;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+/* .mobilenav>a {
+	display: flex;
+	justify-content: space-around;
+} */
+
+
+/* .menuitem {
+} */
+
+/* .gridcontainer{
+} */
+
+footer {
+	background-color: #585858;
+	display: flex;
+	flex-direction: row;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	padding-inline-start: 0;
+	min-height: 5em;
+	position: relative;
+	bottom: 0;
+}
+
+footer>ul {
+	list-style: none;
+	padding: 1.5em;
+}
+
+footer>ul>li {
+	width: 10em;
+}
+
+/* .bold {
+	font-family: 'League Spartan', sans-serif;
+} */
+
+footer>ul>li>a>img {
 	height: 2em;
 }
 
-.mobilenav>a {
-	display: flex;
-	justify-content: space-around;
+.footer-img {
+	width: 1em;
+	padding: 0;
 }
 
-
-.menuitem {
-}
-
-.gridcontainer{
-}
-
-footer {
-	background-color: lightcoral;
-}
-
-@media screen and (min-width: 428px){
+@media screen and (min-width: 429px){
 .desktopnav {
 	display: flex;
 	justify-content: space-around;
+	position: sticky;
+	top: 0;
 }
 .mobilenav{
 	display: none;
@@ -63,14 +115,28 @@ footer {
 .linklogo {
 	display: none;
 }
-.linklogosmall {
+
+.maincontent{
+	min-width: 428px;
+}
+
+
+
+
+main {
+	display: grid;
+	grid-template-columns: auto auto auto;
+}
+
+aside {
 	display: block;
 }
 }
 
 @media screen and (min-width: 768px) {
 .linklogo {
-	display: block;
+	display: flex;
+	justify-content: center;
 }
 .linklogosmall {
 	display: none;
