@@ -1,0 +1,78 @@
+header {
+	background-color: hotpink
+}
+
+.linklogo {
+	display: none;
+}
+
+.linklogosmall {
+	display: block;
+}
+
+.desktopnav {
+	background-color: aqua;
+	display: none;
+	height: 2em;
+}
+aside {
+	background-color: blueviolet;
+}
+
+main {
+	background-color: chartreuse;
+	display: grid;
+	grid-template-columns: 20% 60% 20%;
+	height: 10em;
+}
+
+.mobilenav {
+	background-color: darkmagenta;
+	display: flex;
+	justify-content: space-around;
+	/* display: grid;
+	grid-column: 1 / span 3;
+	grid-row: 2; */
+	height: 2em;
+}
+
+.mobilenav>a {
+	display: flex;
+	justify-content: space-around;
+}
+
+
+.menuitem {
+}
+
+.gridcontainer{
+}
+
+footer {
+	background-color: lightcoral;
+}
+
+@media screen and (min-width: 428px){
+.desktopnav {
+	display: flex;
+	justify-content: space-around;
+}
+.mobilenav{
+	display: none;
+}
+.linklogo {
+	display: none;
+}
+.linklogosmall {
+	display: block;
+}
+}
+
+@media screen and (min-width: 768px) {
+.linklogo {
+	display: block;
+}
+.linklogosmall {
+	display: none;
+}
+}
