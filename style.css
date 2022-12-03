@@ -2,7 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Amiko', sans-serif;
+	font-family: 'Helvetica Neue', sans-serif;
 	font-kerning: normal;
 }
 
@@ -15,15 +15,27 @@ header {
 	position: fixed;
 	top: 0;
 	width: 100%;
+
 }
+
+.header {
+	height: 42px;
+	display: flex;
+	justify-content: center;
+}
+
 
 .linklogo {
 	display: none;
+	width: 744px;
+	height: 126px;
 }
 
 .linklogosmall {
 	display: flex;
 	justify-content: center;
+	width: 34px;
+	height: 42px;
 }
 
 .desktopnav {
@@ -38,8 +50,6 @@ aside {
 
 main {
 	background-color: #1a1a1a;
-	/* display: flex;
-	position: relative; */
 	display: grid;
 	grid-template-columns: 100%;
 	height: 40em;
@@ -102,6 +112,15 @@ footer>ul>li>a>img {
 	padding: 0;
 }
 
+a {
+	text-decoration: none;
+	color: #1b1b1b;
+}
+
+a:hover {
+	cursor: pointer;
+}
+
 @media screen and (min-width: 429px){
 .desktopnav {
 	display: flex;
@@ -140,5 +159,9 @@ aside {
 }
 .linklogosmall {
 	display: none;
+}
+
+.header {
+	height: 126px;
 }
 }
