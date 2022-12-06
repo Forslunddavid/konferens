@@ -1,0 +1,10 @@
+/* .button {
+border-radius: 5px;
+color: #dbdbdb;
+background-color: #1a1a1a;
+} */
+
+form {
+	display: grid;
+	grid-template-rows: 1fr;
+}
