@@ -29,7 +29,23 @@
 		<aside class="gridcontainer"></aside>
 		<!-- Huvudinnehåll -->
 		<section class="maincontent gridcontainer">
-			<p></p>
+			<p>
+				<input placeholder="*Förnamn" type="text" required>
+				<input placeholder="*Efternamn" type="text" required>
+				<input placeholder="*E-postadress" type="email" required>
+				<input placeholder="*Mobilnummer" type="tel" required>
+				<label class="antal" for="antal">Antal:</label>
+				<select name="quantity" id="antal">
+					<option value="one">9-11/12</option>
+					<option value="two">9/12</option>
+					<option value="three">10/12</option>
+					<option value="four">11/12</option>
+				</select>
+				<input name="kött" id="kött" type="radio"><label class="label-hover" for="kött">Kött</label>
+				<input name="fisk" id="fisk" type="radio"><label class="label-hover" for="fisk">Fisk</label>
+				<input name="veg" id="veg" type="radio"><label class="label-hover" for="veg">Vegetariskt</label>
+				<input name="none" id="none" type="radio"><label class="label-hover" for="none">Ingen mat</label>
+			</p>
 		</section>
 		<aside class="gridcontainer"></aside>
 	</main>
@@ -42,7 +58,7 @@
 	<footer>
 		<!-- Innehåll i footer -->
 		<ul>
-			<li class=" bold">Öppettider</li>
+			<li>Öppettider</li>
 			<li>9-10/12 09-22</li>
 			<li>11/12 09-18</li>
 		</ul>
@@ -63,12 +79,12 @@
 					Karlstad</a></li>
 		</ul>
 		<ul>
-			<li class=" bold">Mail</li>
+			<li>Mail</li>
 			<li><a href="mailto:info@frontendia.com?subject=Info">info@frontendia.com</a></li>
 		</ul>
 		<ul>
-			<li class=" bold kundservice"><a href="#">Kundservice</a></li>
-			<li class=" bold medlem"><a href="#">Bli Medlem</a></li>
+			<li><a href="#">Kundservice</a></li>
+			<li><a href="#">Bli Medlem</a></li>
 		</ul>
 	</footer>
 </body>
