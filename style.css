@@ -13,14 +13,14 @@
 	src: url(fonts/bourtoninline.ttf);
 }
 header {
-	background-color: #1A1A1A;
+	background-color: var(--black);
 	position: fixed;
 	top: 0;
 	width: 100%;
 }
 
 .header {
-	height: 42px;
+	height: var(--header-height);
 	display: flex;
 	justify-content: space-around;
 	margin-left: 5%;
@@ -33,14 +33,14 @@ header {
 	display: flex;
 	justify-content: center;
 	width: 248px;
-	height: 42px;
+	height: var(--header-height);
 	align-items: center;
 }
 
 .header__button {
 	display: none;
-	color: #dbdbdb;
-	border-bottom: #dbdbdb 10px;
+	color: var(--white);
+	border-bottom: var(--white) 10px;
 	font-weight: bold;
 }
 
@@ -54,7 +54,7 @@ main {
 	display: grid;
 	grid-template-columns: 1fr;
 	height:auto;
-	min-width: none;
+	/* min-width: 428px; */
 }
 
 .main__section {
@@ -82,7 +82,7 @@ font-weight: bold;
 }
 
 footer {
-	background-color: #1A1A1A;
+	background-color: var(--black);
 	display: flex;
 	flex-direction: row;
 	flex-flow: row wrap;
@@ -105,7 +105,7 @@ footer>ul>li {
 
 a {
 	text-decoration: none;
-	color: #dbdbdb;
+	color: var(--white);
 }
 
 a:hover {
@@ -152,7 +152,7 @@ aside {
 @media screen and (min-width: 650px) {
 .header__button{
 display: flex;
-border-color: #dbdbdb;
+border-color: var(--white);
 border: 10px;
 }
 

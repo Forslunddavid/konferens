@@ -6,18 +6,18 @@
 	}
 
 	.header__button--hover:hover {
-		border-bottom: 3px solid #dbdbdb;
+		border-bottom: 3px solid var(--white);
 	}
 
 	.header__button__main--highlight {
-		border-bottom: 3px solid #dbdbdb;
+		border-bottom: 3px solid var(--white);
 	}
 }
 
 .button {
 border-radius: 5px;
-color: #dbdbdb;
-background-color: #1a1a1a;
+color: var(--white);
+background-color: var(--black);
 }
 
 .main__section__form {

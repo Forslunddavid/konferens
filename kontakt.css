@@ -6,10 +6,10 @@
 	}
 
 	.header__button--hover:hover {
-		border-bottom: 3px solid #dbdbdb;
+		border-bottom: 3px solid var(--white);
 	}
 
 	.header__button__kontakt--highlight {
-		border-bottom: 3px solid #dbdbdb;
+		border-bottom: 3px solid var(--white);
 	}
 }

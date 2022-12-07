@@ -6,11 +6,11 @@
 	}
 
 	.header__button--hover:hover {
-		border-bottom: 3px solid #dbdbdb;
+		border-bottom: 3px solid var(--white);
 	}
 
 	.header__button__info--highlight {
-		border-bottom: 3px solid #dbdbdb;
+		border-bottom: 3px solid var(--white);
 	}
 }
 summary{
@@ -78,6 +78,4 @@ section.accordion {
 details>* {
 	width: 100%;
 	padding: 0.7rem;
-	justify-self: center;
-
 }
