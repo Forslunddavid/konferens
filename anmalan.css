@@ -1,18 +1,19 @@
 /* animation meny desktop */
 @media screen and (min-width: 650px) {
-	.hover-border {
+	.header__button--hover {
 		border-bottom: 3px solid transparent;
 		display: block;
 	}
 
-	.hover-border:hover {
+	.header__button--hover:hover {
 		border-bottom: 3px solid #dbdbdb;
 	}
 
-	.header__button__anmalan--highlight{
+	.header__button__main--highlight {
 		border-bottom: 3px solid #dbdbdb;
 	}
 }
+
 .button {
 border-radius: 5px;
 color: #dbdbdb;

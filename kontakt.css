@@ -1,11 +1,11 @@
 /* animation meny desktop */
 @media screen and (min-width: 650px) {
-	.hover-border {
+	.header__button--hover {
 		border-bottom: 3px solid transparent;
 		display: block;
 	}
 
-	.hover-border:hover {
+	.header__button--hover:hover {
 		border-bottom: 3px solid #dbdbdb;
 	}
 

@@ -29,7 +29,7 @@ header {
 }
 
 
-.Header__link {
+.header__link {
 	display: flex;
 	justify-content: center;
 	width: 248px;
@@ -57,18 +57,18 @@ main {
 }
 
 .main__section {
-	margin-top: 42px;
-	padding-top: 3em;
-	min-height: 40em;
-	padding-left: 3em;
-	padding-right: 3em;
+	padding-top: 5rem;
+	min-height: 40rem;
+	padding-left: 3rem;
+	padding-right: 3rem;
+	padding-bottom: 3rem;
 }
 
 .nav {
 	background-color: #32393D;
 	display: flex;
 	justify-content: space-around;
-	height: 2em;
+	height: 2.5rem;
 	position: fixed;
 	bottom: 0;
 	width: 100%;
@@ -77,7 +77,7 @@ main {
 }
 
 .nav__link{
-font-style: bold;
+/* font-style: bold; */
 }
 
 footer {
@@ -87,19 +87,19 @@ footer {
 	flex-flow: row wrap;
 	justify-content: space-around;
 	padding-inline-start: 0;
-	min-height: 5em;
+	min-height: 5rem;
 	position: relative;
 	bottom: 0;
-	padding-bottom: 2em;
+	padding-bottom: 2rem;
 }
 
 footer>ul {
 	list-style: none;
-	padding: 1.5em;
+	padding: 1.5rem;
 }
 
 footer>ul>li {
-	width: 10em;
+	width: 10rem;
 }
 
 a {
@@ -130,7 +130,7 @@ select:hover {
 .nav{
 	display: flex;
 }
-.Header__link {
+.header__link {
 	display: flex;
 }
 
@@ -152,7 +152,7 @@ aside {
 .header__button{
 display: flex;
 border-color: #dbdbdb;
-border: px;
+border: 10px;
 }
 
 .nav {
