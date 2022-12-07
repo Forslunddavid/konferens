@@ -13,3 +13,21 @@
 		border-bottom: 3px solid var(--white);
 	}
 }
+
+h3 {
+	font-family: var(--header-font);
+	font-size: var(--header-size);
+	margin-bottom: var(--header-margin-bottom);
+	display: flex;
+	justify-content: center;
+}
+
+li {
+	font-weight: bold;
+	margin-top: 1rem;
+	margin-bottom: var(--header-margin-bottom);
+}
+
+a {
+	font-weight: bold;
+}

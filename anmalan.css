@@ -13,18 +13,32 @@
 		border-bottom: 3px solid var(--white);
 	}
 }
-
-.button {
+.form{
+	justify-self: center;
+	border: solid var(--black) 3px;
+	margin: 0.5rem;
+	height: 3rem;
+	width: 80%;
+	color: var(--black);
+	border-radius: 0.5rem;
+}
+button {
 border-radius: 5px;
 color: var(--white);
 background-color: var(--black);
+width: 60%;
+height: 3rem;
+justify-self: center;
+margin: 0.5rem;
+}
+
+label {
+	margin-left: 10%;
 }
 
 .main__section__form {
 	display: grid;
 	grid-template-columns: 1fr;
-	border-radius: 5px;
-	border: 5px solid rgba(0, 0, 0, 0.129);
 }
 
 /* .main__section {

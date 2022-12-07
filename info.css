@@ -13,8 +13,19 @@
 		border-bottom: 3px solid var(--white);
 	}
 }
+
+h2{
+	font-family: var(--header-font);
+	font-size: var(--header-size);
+	margin-bottom: var(--header-margin-bottom);
+}
+
+p {
+	margin-bottom: var(--header-margin-bottom);
+}
+
 summary{
-	font-family: bourtoninline;
+	font-family: var(--header-font);
 }
 
 /* Accordion */

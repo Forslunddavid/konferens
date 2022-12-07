@@ -22,7 +22,7 @@
 			<a class="header__button header__button--hover" href="main.html">Hem</a>
 			<a class="header__button header__button--hover header__button__anmalan--highlight" href="anmalan.html">Anmälan</a>
 			<a class="header__button header__button--hover" href="info.html">Info</a>
-			<a class="header__button header__button--hover" href="kontakt.html">Kontakt</a>
+			<a class="header__button header__button--hover" href="faq.html">F.A.Q.</a>
 		</section>
 	</header>
 	<main>
@@ -30,27 +30,29 @@
 		<!-- Huvudinnehåll -->
 		<section class="main__section">
 			<form action="" class="main__section__form">
-				<input placeholder="*Förnamn" type="text" minlength="2" maxlength="20" pattern="[a-zA-Z]+" title="Fyll i ditt förnamn." required>
-				<input placeholder="*Efternamn" type="text" minlength="2" maxlength="20" pattern="[a-zA-Z]+" title="Fyll i ditt efternamn." required>
-				<input placeholder="*E-postadress" type="email" title="Fyll i din e-postadress." minlength="6" maxlength="40" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
-				<input placeholder="*Mobilnummer" title="Fyll i ditt mobilnummer."type="tel" pattern="[+][0-9]" minlength="8" maxlength="12" required>
+				<input class="form" placeholder="*Förnamn" type="text" minlength="2" maxlength="20" pattern="[a-zA-Z]+" title="Fyll i ditt förnamn." required>
+				<input class="form" placeholder="*Efternamn" type="text" minlength="2" maxlength="20" pattern="[a-zA-Z]+" title="Fyll i ditt efternamn." required>
+				<input class="form" placeholder="*E-postadress" type="email" title="Fyll i din e-postadress." minlength="6" maxlength="40" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+				<input class="form" placeholder="*Mobilnummer" title="Fyll i ditt mobilnummer."type="tel" pattern="[+][0-9]" minlength="8" maxlength="12" required>
 
-				<label class="datum" for="datum">Datum:</label>
-				<select name="quantity" id="antal">
-					<option value="one">9-11/12</option>
-					<option value="two">9/12</option>
-					<option value="three">10/12</option>
-					<option value="four">11/12</option>
+				<label for="datum">Datum:</label>
+				<select class="form" name="quantity" title="Välj önskat datum">
+					<option value="one">Var god välj</option>
+					<option value="two">9-11/12</option>
+					<option value="three">9/12</option>
+					<option value="four">10/12</option>
+					<option value="five">11/12</option>
 				</select>
 
-				<label class="lunch" for="lunch">Förboka Lunch:</label>
-				<select name="quantity" id="antal">
-					<option value="one">Kött</option>
-					<option value="two">Fisk</option>
-					<option value="three">Vegetariskt</option>
-					<option value="four">Ingen Mat</option>
+				<label for="lunch">Förboka Lunch:</label>
+				<select class="form" name="quantity" title="Välj önskad mat">
+					<option value="one">Var god välj</option>
+					<option value="two">Kött</option>
+					<option value="three">Fisk</option>
+					<option value="four">Vegetariskt</option>
+					<option value="five">Ingen Mat</option>
 				</select>
-				<button class="button">Skicka anmälan</button>
+				<button type="submit">Skicka anmälan</button>
 			</form>
 		</section>
 		<aside class="gridcontainer"></aside>
@@ -59,7 +61,7 @@
 	<nav class="nav">
 		<a class="nav__link" href="main.html">Hem</a> <a class="nav__link" href="anmalan.html">Anmälan</a> <a
 			class="nav__link" href="info.html">Info</a>
-		<a class="nav__link" href="kontakt.html">Kontakt</a>
+		<a class="nav__link" href="faq.html">F.A.Q.</a>
 	</nav>
 	<footer>
 		<!-- Innehåll i footer -->

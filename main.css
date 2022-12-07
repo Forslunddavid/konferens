@@ -15,8 +15,8 @@
 }
 
 h1 {
-font-family: bourtoninline;
-font-size: 1.4rem;
-margin-bottom: 0.5rem;
+font-family: var(--header-font);
+font-size: var(--header-size);
+margin-bottom: var(--header-margin-bottom);
 }
 
