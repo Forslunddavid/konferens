@@ -1,10 +1,32 @@
+/* animation meny desktop */
+@media screen and (min-width: 650px) {
+	.hover-border {
+		border-bottom: 3px solid transparent;
+		display: block;
+	}
+
+	.hover-border:hover {
+		border-bottom: 3px solid #dbdbdb;
+	}
+
+	.header__button__anmalan--highlight{
+		border-bottom: 3px solid #dbdbdb;
+	}
+}
 .button {
 border-radius: 5px;
 color: #dbdbdb;
 background-color: #1a1a1a;
 }
 
-.info {
+.main__section__form {
 	display: grid;
 	grid-template-columns: 1fr;
+	border-radius: 5px;
+	border: 5px solid rgba(0, 0, 0, 0.129);
 }
+
+.main__section {
+}
+
+

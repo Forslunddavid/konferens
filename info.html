@@ -13,22 +13,21 @@
 </head>
 
 <body>
-	<!-- Header -->
+	<!-- Header och desktopnav-->
 	<header>
 		<section class="header">
-			<a class="linklogo" target="_self" href="main.html"><img alt="logo" class="logo" src="bilder/logo-white.png"></a>
-			<a class="desktopmenuitem" href="main.html">Hem</a>
-			<a class="desktopmenuitem" href="anmalan.html">Anmälan</a>
-			<a class="desktopmenuitem" href="info.html">Info</a>
-			<a class="desktopmenuitem" href="kontakt.html">Kontakt</a>
+			<a class="header__link" target="_self" href="main.html"><img alt="logo" class="header__logo"
+					src="bilder/logo-white.png"></a>
+			<a class="header__button header__button--hover" href="main.html">Hem</a>
+			<a class="header__button header__button--hover" href="anmalan.html">Anmälan</a>
+			<a class="header__button header__button--hover header__button__info--highlight" href="info.html">Info</a>
+			<a class="header__button header__button--hover" href="kontakt.html">Kontakt</a>
 		</section>
-		<!-- Navbar Desktop -->
-
 	</header>
 	<main>
-		<aside class="gridcontainer"></aside>
+		<aside></aside>
 		<!-- Huvudinnehåll -->
-		<section class="maincontent gridcontainer">
+		<section class="main__section">
 			<p>
 				<ol>
 					<li>"En introduktion till HTML5 och dess nya funktioner"</li>
@@ -43,14 +42,70 @@
 					<li>"En introduktion till designsystem för att skapa enhetlig och användarvänlig upplevelse"</li>
 				</ol>
 			</p>
+<h2>Frequently Asked Questions</h2>
+
+<div style="visibility: hidden; position: absolute; width: 0px; height: 0px;">
+	<svg xmlns="http://www.w3.org/2000/svg">
+		<symbol viewBox="0 0 24 24" id="expand-more">
+			<path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z" />
+			<path d="M0 0h24v24H0z" fill="none" />
+		</symbol>
+		<symbol viewBox="0 0 24 24" id="close">
+			<path
+				d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+			<path d="M0 0h24v24H0z" fill="none" />
+		</symbol>
+	</svg>
+</div>
+
+<details open>
+	<summary>
+		Does this product have what I need?
+		<svg class="control-icon control-icon-expand" width="24" height="24" role="presentation">
+			<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" />
+		</svg>
+		<svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
+			<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" />
+		</svg>
+	</summary>
+	<p>Totally. Totally does.</p>
+</details>
+
+<details>
+
+	<summary>
+		Can I use it all the time?
+		<svg class="control-icon control-icon-expand" width="24" height="24" role="presentation">
+			<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" />
+		</svg>
+		<svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
+			<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" />
+		</svg>
+	</summary>
+	<p>Of course you can, we won't stop you.</p>
+</details>
+
+<details>
+	<summary>
+		Are there any restrictions?
+		<svg class="control-icon control-icon-expand" width="24" height="24" role="presentation">
+			<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" />
+		</svg>
+		<svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
+			<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" />
+		</svg>
+	</summary>
+	<p>Only your imagination my friend. Go forth!</p>
+</details>
+
 		</section>
-		<aside class="gridcontainer"></aside>
+		<aside></aside>
 	</main>
 	<!-- Navbar Mobil -->
-	<nav class="mobilenav">
-		<a class="menuitem" href="main.html">Hem</a> <a class="menuitem" href="anmalan.html">Anmälan</a> <a
-			class="menuitem" href="info.html">Info</a>
-		<a class="menuitem" href="kontakt.html">Kontakt</a>
+	<nav class="nav">
+		<a class="nav__link" href="main.html">Hem</a> <a class="menuitem" href="anmalan.html">Anmälan</a> <a
+			class="nav__link" href="info.html">Info</a>
+		<a class="nav__link" href="kontakt.html">Kontakt</a>
 	</nav>
 	<footer>
 		<!-- Innehåll i footer -->
@@ -64,7 +119,7 @@
 			<li>0771-23 45 67</li>
 		</ul>
 		</ul>
-		<ul class="adress">
+		<ul>
 			<li><a
 					href="https://www.google.com/maps/place/Karlstad+CCC/@59.3834771,13.5072189,17z/data=!3m1!4b1!4m5!3m4!1s0x465cb3d7f3914f0d:0xfea53dd69ed47d66!8m2!3d59.3834771!4d13.5094076">Adress</a>
 			</li>

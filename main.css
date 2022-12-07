@@ -1,0 +1,21 @@
+/* animation meny desktop */
+@media screen and (min-width: 650px) {
+	.header__button--hover {
+		border-bottom: 3px solid transparent;
+		display: block;
+	}
+
+	.header__button--hover:hover {
+		border-bottom: 3px solid #dbdbdb;
+	}
+
+	.header__button__main--highlight {
+		border-bottom: 3px solid #dbdbdb;
+	}
+}
+
+h1 {
+font-family: bourtoninline;
+font-size: 1.4em;
+margin-bottom: 0.5em;
+}

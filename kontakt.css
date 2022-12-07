@@ -1,0 +1,15 @@
+/* animation meny desktop */
+@media screen and (min-width: 650px) {
+	.hover-border {
+		border-bottom: 3px solid transparent;
+		display: block;
+	}
+
+	.hover-border:hover {
+		border-bottom: 3px solid #dbdbdb;
+	}
+
+	.header__button__kontakt--highlight {
+		border-bottom: 3px solid #dbdbdb;
+	}
+}

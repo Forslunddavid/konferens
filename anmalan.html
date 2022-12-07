@@ -13,27 +13,27 @@
 </head>
 
 <body>
-	<!-- Header -->
+	<!-- Header och desktopnav-->
 	<header>
 		<section class="header">
-			<a class="linklogo" target="_self" href="main.html"><img alt="logo" class="logo" src="bilder/logo-white.png"></a>
-			<a class="desktopmenuitem" href="main.html">Hem</a>
-			<a class="desktopmenuitem" href="anmalan.html">Anmälan</a>
-			<a class="desktopmenuitem" href="info.html">Info</a>
-			<a class="desktopmenuitem" href="kontakt.html">Kontakt</a>
+			<a class="header__link" target="_self" href="main.html"><img alt="logo" class="header__logo"
+					src="bilder/logo-white.png"></a>
+			<a class="header__button header__button--hover" href="main.html">Hem</a>
+			<a class="header__button header__button--hover header__button__anmalan--highlight" href="anmalan.html">Anmälan</a>
+			<a class="header__button header__button--hover" href="info.html">Info</a>
+			<a class="header__button header__button--hover" href="kontakt.html">Kontakt</a>
 		</section>
-		<!-- Navbar Desktop -->
-
 	</header>
 	<main>
-		<aside class="gridcontainer"></aside>
+		<aside></aside>
 		<!-- Huvudinnehåll -->
-		<section class="maincontent gridcontainer">
-			<form action="" class="info">
-				<input placeholder="*Förnamn" type="text" pattern="[a-zA-Z]+" title="Please enter Alphabets." required>
-				<input placeholder="*Efternamn" type="text" required>
-				<input placeholder="*E-postadress" type="email" required>
-				<input placeholder="*Mobilnummer" type="tel" required>
+		<section class="main__section">
+			<form action="" class="main__section__form">
+				<input placeholder="*Förnamn" type="text" minlength="2" maxlength="20" pattern="[a-zA-Z]+" title="Fyll i ditt förnamn." required>
+				<input placeholder="*Efternamn" type="text" minlength="2" maxlength="20" pattern="[a-zA-Z]+" title="Fyll i ditt efternamn." required>
+				<input placeholder="*E-postadress" type="email" title="Fyll i din e-postadress." minlength="6" maxlength="40" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+				<input placeholder="*Mobilnummer" title="Fyll i ditt mobilnummer."type="tel" pattern="[+][0-9]" minlength="8" maxlength="12" required>
+
 				<label class="datum" for="datum">Datum:</label>
 				<select name="quantity" id="antal">
 					<option value="one">9-11/12</option>
@@ -41,20 +41,24 @@
 					<option value="three">10/12</option>
 					<option value="four">11/12</option>
 				</select>
-				<input name="kött" id="kött" type="radio"><label class="label-hover" for="kött">Kött</label>
-				<input name="fisk" id="fisk" type="radio"><label class="label-hover" for="fisk">Fisk</label>
-				<input name="veg" id="veg" type="radio"><label class="label-hover" for="veg">Vegetariskt</label>
-				<input name="none" id="none" type="radio"><label class="label-hover" for="none">Ingen mat</label>
+
+				<label class="lunch" for="lunch">Förboka Lunch:</label>
+				<select name="quantity" id="antal">
+					<option value="one">Kött</option>
+					<option value="two">Fisk</option>
+					<option value="three">Vegetariskt</option>
+					<option value="four">Ingen Mat</option>
+				</select>
 				<button class="button">Boka Biljett</button>
 			</form>
 		</section>
 		<aside class="gridcontainer"></aside>
 	</main>
 	<!-- Navbar Mobil -->
-	<nav class="mobilenav">
-		<a class="menuitem" href="main.html">Hem</a> <a class="menuitem" href="anmalan.html">Anmälan</a> <a
-			class="menuitem" href="info.html">Info</a>
-		<a class="menuitem" href="kontakt.html">Kontakt</a>
+	<nav class="nav">
+		<a class="nav__link" href="main.html">Hem</a> <a class="menuitem" href="anmalan.html">Anmälan</a> <a
+			class="nav__link" href="info.html">Info</a>
+		<a class="nav__link" href="kontakt.html">Kontakt</a>
 	</nav>
 	<footer>
 		<!-- Innehåll i footer -->
@@ -68,7 +72,7 @@
 			<li>0771-23 45 67</li>
 		</ul>
 		</ul>
-		<ul class="adress">
+		<ul>
 			<li><a
 					href="https://www.google.com/maps/place/Karlstad+CCC/@59.3834771,13.5072189,17z/data=!3m1!4b1!4m5!3m4!1s0x465cb3d7f3914f0d:0xfea53dd69ed47d66!8m2!3d59.3834771!4d13.5094076">Adress</a>
 			</li>

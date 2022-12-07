@@ -6,37 +6,7 @@
 	font-kerning: normal;
 	color: #dbdbdb;
 }
-/* animation meny desktop */
-.desktopmenuitem:hover {
-	color: #fc1a02;
-}
 
-.desktopmenuitem::before,
-.desktopmenuitem::after {
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	transform-origin: center;
-}
-
-.desktopmenuitem::before {
-	border-top: 2px solid #fc1a02;
-	border-bottom: 2px solid #fc1a02;
-	transform: scale3d(0, 1, 1);
-}
-
-.desktopmenuitem::after {
-	border-left: 2px solid #fc1a02;
-	border-right: 2px solid #fc1a02;
-	transform: scale3d(1, 0, 1);
-}
-
-.desktopmenuitem:hover::before,
-.desktopmenuitem:hover::after {
-	transform: scale3d(1, 1, 1);
-	transition: transform 0.5s;
-}
 
 @font-face {
 	font-family: BourtonInline;
@@ -59,19 +29,20 @@ header {
 }
 
 
-.linklogo {
+.Header__link {
 	display: flex;
 	justify-content: center;
 	width: 248px;
 	height: 42px;
+	align-items: center;
 }
 
-.desktopmenuitem {
+.header__button {
 	display: none;
 	color: #dbdbdb;
 	border-bottom: #dbdbdb 10px;
-	z-index: 2;
 }
+
 aside {
 	background-color: #1B2429;
 	display: none;
@@ -85,7 +56,15 @@ main {
 	min-width: none;
 }
 
-.mobilenav {
+.main__section {
+	margin-top: 42px;
+	padding-top: 3em;
+	min-height: 40em;
+	padding-left: 3em;
+	padding-right: 3em;
+}
+
+.nav {
 	background-color: #32393D;
 	display: flex;
 	justify-content: space-around;
@@ -97,12 +76,8 @@ main {
 	align-items: center;
 }
 
-.maincontent {
-	margin-top: 42px;
-	padding-top: 3em;
-	min-height: 40em;
-	padding-left: 3em;
-	padding-right: 3em;
+.nav__link{
+font-style: bold;
 }
 
 footer {
@@ -136,24 +111,36 @@ a:hover {
 	cursor: pointer;
 }
 
+button:hover {
+	cursor: pointer;
+}
+
+label:hover {
+	cursor: pointer;
+}
+
+select:hover {
+	cursor: pointer;
+}
+
 @media screen and (min-width: 429px){
-.desktopmenuitem {
+.header__button {
 	display: none;
 }
-.mobilenav{
+.nav{
 	display: flex;
 }
-.linklogo {
+.Header__link {
 	display: flex;
 }
 
-.maincontent{
+.main__section{
 	min-width: 428px;
 }
 
 main {
 	display: grid;
-	grid-template-columns: 2fr 6fr 2fr;
+	grid-template-columns: 2fr 6fr 2fr ;
 }
 
 aside {
@@ -162,13 +149,13 @@ aside {
 }
 
 @media screen and (min-width: 650px) {
-.desktopmenuitem{
+.header__button{
 display: flex;
 border-color: #dbdbdb;
 border: px;
 }
 
-.mobilenav {
+.nav {
 	display: none;
 }
 }
