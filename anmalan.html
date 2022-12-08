@@ -31,49 +31,59 @@
 		<!-- Huvudinnehåll -->
 		<section class="main__section">
 			<!-- Formulär -->
-			<p>Fyll i dina uppgifter</p>
-			<form action="#" class="main__section__form">
+			<h4>Fyll i dina uppgifter</h4>
+			<form action="" class="main__section__form">
 				<label for="firstname">Förnamn</label>
-				<input id="firstname"placeholder="*Förnamn" type="text" minlength="2" maxlength="20" pattern="[a-zA-Z]+" title="Fyll i ditt förnamn." value="" required />
+				<input id="firstname"placeholder="Förnamn" type="text" minlength="2" maxlength="20" pattern="[a-zA-Z]+" title="Fyll i ditt förnamn." value="" required />
+				<p class="error">Var vänlig fyll i ditt förnamn</p>
 				<label for="lastname">Efternamn</label>
-				<input id="lastname" placeholder="*Efternamn" type="text" minlength="2" maxlength="20" pattern="[a-zA-Z]+" title="Fyll i ditt efternamn." value="" required />
+				<input id="lastname" placeholder="Efternamn" type="text" minlength="2" maxlength="20" pattern="[a-zA-Z]+" title="Fyll i ditt efternamn." value="" required />
+				<p class="error">Var vänlig fyll i ditt efternamn</p>
 				<label for="e-mail">E-postadress</label>
-				<input id="e-mail" placeholder="*E-postadress" type="email" title="Fyll i din e-postadress." minlength="6" maxlength="40" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" value="" required />
+				<input id="e-mail" placeholder="E-postadress" type="email" title="Fyll i din e-postadress." minlength="6" maxlength="40" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" value="" required />
+				<p class="error">Var vänlig fyll i din E-postadress</p>
 				<label for="phonenumber">Mobilnummer</label>
-				<input id="phonenumber" class="form" placeholder="*Mobilnummer" title="Fyll i ditt mobilnummer."type="tel" pattern="[+][0-9]{2,5}[0-9]{7,10} " minlength="8" maxlength="12" value="" required />
+				<input id="phonenumber" placeholder="Mobilnummer" title="Fyll i ditt mobilnummer." type="tel" minlength="8" maxlength="12" pattern="[0-9]{8,12}" value="" required />
+				<p class="error">Var vänlig fyll i ditt mobilnummer, minst 8 siffror</p>
 
 				<label for="datum">Datum:</label>
-				<select id="datum" class="form" name="quantity" title="Välj önskat datum">
+				<select required id="datum" name="quantity" title="Välj önskat datum">
 					<option value="one">Var god välj</option>
 					<option value="two">9-11/12</option>
 					<option value="three">9/12</option>
 					<option value="four">10/12</option>
 					<option value="five">11/12</option>
 				</select>
+				<p class="error">Var vänlig välj vilken/vilka dagar du vill delta</p>
 
-				<!-- <fieldset>
-					<legend>Förboka Lunch</legend>
-					<input type="radio" id="kött" name="mat" value="k" />
-					<label for="kött">Kött</label>
-					</br>
-					<input type="radio" id="fisk" name="mat" value="f" />
-					<label for="fisk">fisk</label>
-					</br>
-					<input type="radio" id="vegetariskt" name="mat" value="v" />
-					<label for="vegetariskt">Vegetariskt</label>
-					</br>
-					<input type="radio" id="ingen mat" name="mat" value="i" />
-					<label for="ingen mat">Ingen mat</label>
-				</fieldset> -->
-
-				<label for="lunch">Förboka Lunch:</label>
-				<select id="lunch" class="form" name="quantity" title="Välj önskad mat">
-					<option value="one">Var god välj</option>
-					<option value="two">Kött</option>
-					<option value="three">Fisk</option>
-					<option value="four">Vegetariskt</option>
-					<option value="five">Ingen Mat</option>
-				</select>
+				<div>
+					<label>Förboka Lunch</label>
+					<div>
+						<input id="kött" type="radio" name="mat" required/>
+						<label for="kött">Kött</label>
+					</div>
+					<div>
+						<input id="fisk" type="radio" name="mat" />
+						<label for="fisk">fisk</label>
+					</div>
+					<div>
+						<input id="vegetariskt" type="radio" name="mat" />
+						<label for="vegetariskt">Vegetariskt</label>
+					</div>
+					<div>
+						<input id="ingen mat" type="radio" name="mat" />
+						<label for="ingen mat">Ingen mat</label>
+					</div>
+				</div>
+				</br>
+				<div>
+				<input id="newsletter" type="checkbox" value="" unchecked />
+				<label for="newsletter"> Prenumerera på nyhetsbrev </label>
+				</div>
+				<div>
+				<input id="terms" type="checkbox" value="" unchecked required/>
+				<label for="terms"> Godkänn villkor </label>
+				</div>
 				<button>Skicka anmälan</button>
 			</form>
 		</section>

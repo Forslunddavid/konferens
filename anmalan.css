@@ -13,7 +13,8 @@
 		border-bottom: 3px solid var(--white);
 	}
 }
-input{
+
+input[type="text"], input[type="email"], input[type="tel"]{
 	justify-self: center;
 	border: solid var(--black) 3px;
 	margin: 0.5rem;
@@ -34,7 +35,7 @@ select {
 	min-width: 180px;
 }
 
-p {
+h4 {
 	font-family: var(--header-font);
 	margin-left: 10%;
 	margin-bottom: 0.5rem;
@@ -59,12 +60,44 @@ label {
 	font-weight: bold;
 }
 
+input[type="checkbox"], input[type="radio"]{
+	margin-left: 10%;
+	padding-bottom: 0.3rem;
+}
+input[type="checkbox"] + label, input[type="radio"]+label {
+	font-weight: normal;
+	margin-left: 0;
+	font-size: 0.9rem;
+}
+
+input:blank {
+	border: solid var(--black) 3px;
+	background-color: #ffffff;
+}
+
+input:invalid {
+	border-right: solid 10px #ff0000;
+
+}
+
+input:valid {
+	border-right: solid 10px #008000;
+}
+
+.error {
+	visibility: hidden;
+	margin-left: 10%;
+	margin-bottom: 0.5rem;
+	font-size: 0.8rem;
+	color: var(--error-red);
+}
+
+input:invalid:focus + .error {
+	visibility: visible;
+}
+
+
 .main__section__form {
 	display: grid;
 	grid-template-columns: 1fr;
 }
-
-/* .main__section {
-} */
-
-

@@ -108,19 +108,7 @@ a {
 	color: var(--white);
 }
 
-a:hover {
-	cursor: pointer;
-}
-
-button:hover {
-	cursor: pointer;
-}
-
-label:hover {
-	cursor: pointer;
-}
-
-select:hover {
+a:hover, button:hover, label:hover, select:hover, input[type="checkbox"]:hover, input[type="checkbox"]:hover{
 	cursor: pointer;
 }
 

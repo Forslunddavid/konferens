@@ -50,12 +50,12 @@ details[open]>summary {
 }
 
 details[open]> :not(summary) {
-	border-left: solid 3px #1A1A1A;
-	border-right: solid 3px #1A1A1A;
+	border-left: solid 3px var(--black);
+	border-right: solid 3px var(--black);
 }
 
 details[open]> :last-child {
-	border-bottom: solid 3px #1A1A1A;
+	border-bottom: solid 3px var(--black);
 	border-bottom-left-radius: 0.5rem;
 	border-bottom-right-radius: 0.5rem;
 }
@@ -65,7 +65,7 @@ details>summary::before {
 	display: inline-block;
 	width: 0.5rem;
 	height: 0.5rem;
-	border: solid 2px #1A1A1A;
+	border: solid 2px var(--black);
 	border-left-color: transparent;
 	border-bottom-color: transparent;
 	margin-right: 0.6rem;
