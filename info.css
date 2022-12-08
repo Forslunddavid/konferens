@@ -22,6 +22,11 @@ h2{
 	margin-bottom: var(--header-margin-bottom);
 }
 
+.schedule {
+	margin-left: 10%;
+	font-weight: bold;
+}
+
 p {
 	margin-bottom: var(--header-margin-bottom);
 }
@@ -79,7 +84,8 @@ details[open]>summary::before {
 section.accordion {
 	max-width: 800px;
 	width: 100%;
-	padding: 0.7rem;
+	padding-top: 0.7rem;
+	padding-bottom: 0.7rem;
 	justify-content: center;
 }
 

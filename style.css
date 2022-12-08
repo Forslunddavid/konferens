@@ -25,15 +25,14 @@ header {
 	height: var(--header-height);
 	display: flex;
 	justify-content: space-around;
-	margin-left: 5%;
-	margin-right: 5%;
+	/* margin-left: 5%;
+	margin-right: 5%; */
 	align-items: center;
 }
 
 .header__link {
 	display: flex;
 	justify-content: center;
-	width: 248px;
 	height: var(--header-height);
 	align-items: center;
 }
