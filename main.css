@@ -3,10 +3,12 @@
 	.header__button--hover {
 		border-bottom: 3px solid transparent;
 		display: block;
+		transition: all 0.8s ease-in-out;
 	}
 
 	.header__button--hover:hover {
 		border-bottom: 3px solid var(--white);
+
 	}
 
 	.header__button__main--highlight {
@@ -14,9 +16,15 @@
 	}
 }
 
+/* Main content */
 h1 {
 font-family: var(--header-font);
 font-size: var(--header-size);
 margin-bottom: var(--header-margin-bottom);
 }
 
+.hero-image {
+	width: 100%;
+	height: auto;
+	padding-top: 3rem;
+}

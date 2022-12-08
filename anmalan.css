@@ -3,6 +3,7 @@
 	.header__button--hover {
 		border-bottom: 3px solid transparent;
 		display: block;
+		transition: all 0.5s;
 	}
 
 	.header__button--hover:hover {
@@ -14,6 +15,14 @@
 	}
 }
 
+/* Main content */
+h4 {
+	font-family: var(--header-font);
+	margin-left: 10%;
+	margin-bottom: 0.5rem;
+}
+
+/* Formulär */
 input[type="text"], input[type="email"], input[type="tel"]{
 	justify-self: center;
 	border: solid var(--black) 3px;
@@ -35,24 +44,8 @@ select {
 	min-width: 180px;
 }
 
-h4 {
-	font-family: var(--header-font);
-	margin-left: 10%;
-	margin-bottom: 0.5rem;
-}
-
 input::placeholder {
 	color: var(--black);
-	/* background-color: var(--white); */
-}
-button {
-border-radius: 5px;
-color: var(--black);
-background-color:#ffffff;
-width: 60%;
-height: 3rem;
-justify-self: center;
-margin: 0.5rem;
 }
 
 label {
@@ -60,11 +53,14 @@ label {
 	font-weight: bold;
 }
 
-input[type="checkbox"], input[type="radio"]{
+input[type="checkbox"],
+input[type="radio"] {
 	margin-left: 10%;
 	padding-bottom: 0.3rem;
 }
-input[type="checkbox"] + label, input[type="radio"]+label {
+
+input[type="checkbox"]+label,
+input[type="radio"]+label {
 	font-weight: normal;
 	margin-left: 0;
 	font-size: 0.9rem;
@@ -92,12 +88,23 @@ input:valid {
 	color: var(--error-red);
 }
 
-input:invalid:focus + .error {
+input:invalid:focus+.error {
 	visibility: visible;
 }
-
 
 .main__section__form {
 	display: grid;
 	grid-template-columns: 1fr;
 }
+
+/* Knapp */
+button {
+border-radius: 5px;
+color: var(--black);
+background-color:#ffffff;
+width: 60%;
+height: 3rem;
+justify-self: center;
+margin: 0.5rem;
+}
+

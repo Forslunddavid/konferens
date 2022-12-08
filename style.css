@@ -7,11 +7,13 @@
 	color: #dbdbdb;
 }
 
-
 @font-face {
 	font-family: BourtonInline;
 	src: url(fonts/bourtoninline.ttf);
+	font-display: swap;
 }
+
+/* Header */
 header {
 	background-color: var(--black);
 	position: fixed;
@@ -28,13 +30,17 @@ header {
 	align-items: center;
 }
 
-
 .header__link {
 	display: flex;
 	justify-content: center;
 	width: 248px;
 	height: var(--header-height);
 	align-items: center;
+}
+
+img.header__logo{
+	width: 194;
+	height: 42;
 }
 
 .header__button {
@@ -44,6 +50,7 @@ header {
 	font-weight: bold;
 }
 
+/* Main content */
 aside {
 	background-color: #1B2429;
 	display: none;
@@ -54,7 +61,6 @@ main {
 	display: grid;
 	grid-template-columns: 1fr;
 	height:auto;
-	/* min-width: 428px; */
 }
 
 .main__section {
@@ -65,6 +71,7 @@ main {
 	padding-bottom: 3rem;
 }
 
+/* Navbar Mobil */
 .nav {
 	background-color: #32393D;
 	display: flex;
@@ -81,6 +88,22 @@ main {
 font-weight: bold;
 }
 
+a {
+	text-decoration: none;
+	color: var(--white);
+}
+
+/* Cursor */
+a:hover,
+button:hover,
+label:hover,
+select:hover,
+input[type="checkbox"]:hover,
+input[type="checkbox"]:hover {
+	cursor: pointer;
+}
+
+/* Footer */
 footer {
 	background-color: var(--black);
 	display: flex;
@@ -103,14 +126,7 @@ footer>ul>li {
 	width: 10rem;
 }
 
-a {
-	text-decoration: none;
-	color: var(--white);
-}
-
-a:hover, button:hover, label:hover, select:hover, input[type="checkbox"]:hover, input[type="checkbox"]:hover{
-	cursor: pointer;
-}
+/* media querys */
 
 @media screen and (min-width: 429px){
 .header__button {
