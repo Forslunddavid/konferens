@@ -72,12 +72,12 @@ input:blank {
 }
 
 input:invalid {
-	border-right: solid 10px #ff0000;
+	border: solid 3px #ff0000;
 
 }
 
 input:valid {
-	border-right: solid 10px #008000;
+	border: solid 3px #008000;
 }
 
 .error {
@@ -95,6 +95,26 @@ input:invalid:focus+.error {
 .main__section__form {
 	display: grid;
 	grid-template-columns: 1fr;
+}
+
+select:invalid {
+	border: solid 3px #ff0000;
+
+}
+
+select:valid {
+	border: solid 3px #008000;
+}
+
+select:invalid:focus+.error {
+	visibility: visible;
+}
+
+input[type="checkbox"]:invalid:focus+.error{
+	visibility: visible;
+}
+input[type="radio"]:invalid:focus+.error {
+	visibility: visible;
 }
 
 /* Knapp */

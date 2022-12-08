@@ -48,11 +48,11 @@
 
 				<label for="datum">Datum:</label>
 				<select required id="datum" name="quantity" title="Välj önskat datum">
-					<option value="one">Var god välj</option>
-					<option value="two">9-11/12</option>
-					<option value="three">9/12</option>
-					<option value="four">10/12</option>
-					<option value="five">11/12</option>
+					<option value="">Var god välj</option>
+					<option value="one">9-11/12</option>
+					<option value="two">9/12</option>
+					<option value="three">10/12</option>
+					<option value="four">11/12</option>
 				</select>
 				<p class="error">Var vänlig välj vilken/vilka dagar du vill delta</p>
 
@@ -64,7 +64,7 @@
 					</div>
 					<div>
 						<input id="fisk" type="radio" name="mat" />
-						<label for="fisk">fisk</label>
+						<label for="fisk">Fisk</label>
 					</div>
 					<div>
 						<input id="vegetariskt" type="radio" name="mat" />
@@ -74,6 +74,7 @@
 						<input id="ingen mat" type="radio" name="mat" />
 						<label for="ingen mat">Ingen mat</label>
 					</div>
+					<p class="error">Var vänlig välj ett av alternativen</p>
 				</div>
 				</br>
 				<div>
@@ -83,6 +84,7 @@
 				<div>
 				<input id="terms" type="checkbox" value="" unchecked required/>
 				<label for="terms"> Godkänn villkor </label>
+				<p class="error">Var vänlig godkänn villkoren innan du går vidare</p>
 				</div>
 				<button>Skicka anmälan</button>
 			</form>
