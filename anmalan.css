@@ -13,7 +13,7 @@
 		border-bottom: 3px solid var(--white);
 	}
 }
-.form{
+input{
 	justify-self: center;
 	border: solid var(--black) 3px;
 	margin: 0.5rem;
@@ -21,11 +21,33 @@
 	width: 80%;
 	color: var(--black);
 	border-radius: 0.5rem;
+	min-width: 180px;
+}
+select {
+	justify-self: center;
+	border: solid var(--black) 3px;
+	margin: 0.5rem;
+	height: 3rem;
+	width: 80%;
+	color: var(--black);
+	border-radius: 0.5rem;
+	min-width: 180px;
+}
+
+p {
+	font-family: var(--header-font);
+	margin-left: 10%;
+	margin-bottom: 0.5rem;
+}
+
+input::placeholder {
+	color: var(--black);
+	/* background-color: var(--white); */
 }
 button {
 border-radius: 5px;
-color: var(--white);
-background-color: var(--black);
+color: var(--black);
+background-color:#ffffff;
 width: 60%;
 height: 3rem;
 justify-self: center;
@@ -34,6 +56,7 @@ margin: 0.5rem;
 
 label {
 	margin-left: 10%;
+	font-weight: bold;
 }
 
 .main__section__form {

@@ -30,14 +30,20 @@
 		<aside></aside>
 		<!-- Huvudinnehåll -->
 		<section class="main__section">
-			<form action="" class="main__section__form">
-				<input class="form" placeholder="*Förnamn" type="text" minlength="2" maxlength="20" pattern="[a-zA-Z]+" title="Fyll i ditt förnamn." required>
-				<input class="form" placeholder="*Efternamn" type="text" minlength="2" maxlength="20" pattern="[a-zA-Z]+" title="Fyll i ditt efternamn." required>
-				<input class="form" placeholder="*E-postadress" type="email" title="Fyll i din e-postadress." minlength="6" maxlength="40" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
-				<input class="form" placeholder="*Mobilnummer" title="Fyll i ditt mobilnummer."type="tel" pattern="[+][0-9]" minlength="8" maxlength="12" required>
+			<!-- Formulär -->
+			<p>Fyll i dina uppgifter</p>
+			<form action="#" class="main__section__form">
+				<label for="firstname">Förnamn</label>
+				<input id="firstname"placeholder="*Förnamn" type="text" minlength="2" maxlength="20" pattern="[a-zA-Z]+" title="Fyll i ditt förnamn." value="" required />
+				<label for="lastname">Efternamn</label>
+				<input id="lastname" placeholder="*Efternamn" type="text" minlength="2" maxlength="20" pattern="[a-zA-Z]+" title="Fyll i ditt efternamn." value="" required />
+				<label for="e-mail">E-postadress</label>
+				<input id="e-mail" placeholder="*E-postadress" type="email" title="Fyll i din e-postadress." minlength="6" maxlength="40" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" value="" required />
+				<label for="phonenumber">Mobilnummer</label>
+				<input id="phonenumber" class="form" placeholder="*Mobilnummer" title="Fyll i ditt mobilnummer."type="tel" pattern="[+][0-9]{2,5}[0-9]{7,10} " minlength="8" maxlength="12" value="" required />
 
 				<label for="datum">Datum:</label>
-				<select class="form" name="quantity" title="Välj önskat datum">
+				<select id="datum" class="form" name="quantity" title="Välj önskat datum">
 					<option value="one">Var god välj</option>
 					<option value="two">9-11/12</option>
 					<option value="three">9/12</option>
@@ -45,15 +51,30 @@
 					<option value="five">11/12</option>
 				</select>
 
+				<!-- <fieldset>
+					<legend>Förboka Lunch</legend>
+					<input type="radio" id="kött" name="mat" value="k" />
+					<label for="kött">Kött</label>
+					</br>
+					<input type="radio" id="fisk" name="mat" value="f" />
+					<label for="fisk">fisk</label>
+					</br>
+					<input type="radio" id="vegetariskt" name="mat" value="v" />
+					<label for="vegetariskt">Vegetariskt</label>
+					</br>
+					<input type="radio" id="ingen mat" name="mat" value="i" />
+					<label for="ingen mat">Ingen mat</label>
+				</fieldset> -->
+
 				<label for="lunch">Förboka Lunch:</label>
-				<select class="form" name="quantity" title="Välj önskad mat">
+				<select id="lunch" class="form" name="quantity" title="Välj önskad mat">
 					<option value="one">Var god välj</option>
 					<option value="two">Kött</option>
 					<option value="three">Fisk</option>
 					<option value="four">Vegetariskt</option>
 					<option value="five">Ingen Mat</option>
 				</select>
-				<button type="submit">Skicka anmälan</button>
+				<button>Skicka anmälan</button>
 			</form>
 		</section>
 		<aside class="gridcontainer"></aside>
